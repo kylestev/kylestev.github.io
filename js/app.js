@@ -101,7 +101,7 @@ resumeApp.controller('ProjectController', function ($scope) {
 	var projects = [
 		{
 			title: "Which Course For Me",
-			description: "Which Course for Me is a web application providing current, consumable information about course information at Oregon State University. Conveniently, there are interfaces for both humans (Bootstrap + AngularJS), and for machines (JSON API)!",
+			description: "Which Course for Me is a web application providing current, consumable information about courses offered at Oregon State University. Conveniently, there are interfaces for both humans (Bootstrap + AngularJS), and for machines (JSON API)!",
 			image: {
 				src: "https://i.imgur.com/SU6wXSd.png",
 				href: "https://which-course-for.me"
@@ -126,11 +126,27 @@ resumeApp.controller('ProjectController', function ($scope) {
 resumeApp.controller('HobbyController', function ($scope) {
 	var hobbySections = [
 		{
+			name: "Books",
+			hobbies: [
+				"Ender's Game Series",
+				"Foundation Series",
+				"Next of Kin",
+			]
+		},
+		{
 			name: "Physical Activities",
 			hobbies: [
 				"Racquetball",
 				"Biking",
 				"Running",
+			]
+		},
+		{
+			name: "Puzzles",
+			hobbies: [
+				"Rubik's Cube",
+				"Pyraminx",
+				"2x2 Cube",
 			]
 		},
 		{
@@ -146,9 +162,10 @@ resumeApp.controller('HobbyController', function ($scope) {
 			name: "Selected Topics in Computing",
 			hobbies: [
 				"Application Security",
-				"Software Architecture",
+				"Penetration Testing",
 				"Reverse Engineering",
 				"Distributed Systems",
+				"Software Architecture",
 				"High Performance Computing",
 			]
 		},
