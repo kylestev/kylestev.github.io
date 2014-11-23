@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app="resumeApp">
+<head>
+  <title>Kyle Stevenson - Resume</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="header" class="bg1" ng-controller="PersonController">
+  <div id="headerblob">
+    <img class="img-circle imgme" ng-src="{{ me.image.src }}" ng-show="{{ me.image }}" />
+    <div id="headertext">
+      <div id="htname">{{ me.name }}</div>
+      <div id="htdesc">{{ me.major }} {{ me.year }} at {{ me.school }}</div>
+      <div id="htem">{{ me.email.username }} [at] {{ me.email.domain }}</div>
+      <div id="icons">
+        <div class="svgico" ng-repeat="icon in socialIcons">
+          <a href="{{ icon.href }}"><img ng-src="{{ icon.src }}" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div id="timeline" ng-controller="JobController">
+    <div class="timelineitem" ng-repeat="job in jobs">
+      <div class="tdate">{{ printDates(job) }}</div>
+      <div class="ttitle">
+        {{ job.title }} at <span class="comp-{{ job.company.color }}">{{ job.company.name }}</span>
+      </div>
+      <div class="tdesc" ng-hide="true">{{ job.description }}</div>
+      <div class="tbullets" ng-show="{{ job.bullets }}">
+        <ul>
+          <li ng-repeat="bullet in job.bullets">{{ bullet }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container quote">
+  <blockquote>
+    "Build. Break. Fix. Repeat."
+  </blockquote>
+</div>
+
+<hr class="soft" />
+
+<div class="container" ng-controller="ProjectController">
+  <h2>Projects</h2>
+  <div class="row">
+    <div class="col-md-4" ng-repeat="project in projects">
+      <div class="pp">
+        <a href="{{ project.image.href }}">
+          <img ng-src="{{ project.image.src }}" class="img-circle imgb" height="200px">
+        </a>
+        <div class="ppt">
+          {{ project.title }}
+        </div>
+        <div class="ppd">
+          {{ project.description }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="sitefooter"></div>
+
+</body>
+</html>
