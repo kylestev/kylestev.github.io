@@ -122,3 +122,46 @@ resumeApp.controller('ProjectController', function ($scope) {
 		return projects;
 	};
 });
+
+resumeApp.controller('HobbyController', function ($scope) {
+	var hobbySections = [
+		{
+			name: "Physical Activities",
+			hobbies: [
+				"Racquetball",
+				"Biking",
+				"Running",
+			]
+		},
+		{
+			name: "Programming Languages and Frameworks",
+			hobbies: [
+				"Python, Flask",
+				"Java, bytecode, ASM 4",
+				"PHP, HHVM, Laravel 5",
+				"JavaScript, Node JS, AngularJS",
+			]
+		},
+		{
+			name: "Selected Topics in Computing",
+			hobbies: [
+				"Application Security",
+				"Software Architecture",
+				"Reverse Engineering",
+				"Distributed Systems",
+				"High Performance Computing",
+			]
+		},
+		{
+			name: "Software Engineering Practices",
+			hobbies: [
+				"Dependency Injection",
+				"Inversion of Control",
+			]
+		}
+	];
+
+	$scope.getHobbySections = function () {
+		return hobbySections;
+	}
+});

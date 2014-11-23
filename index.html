@@ -74,6 +74,29 @@
   </div>
 </div>
 
+<div class="container" ng-controller="HobbyController">
+  <h2>Activies and Interesting Topics</h2>
+  <div ng-repeat="section in getHobbySections()">
+    <span ng-if="$index % 2 == 0">
+      <hr />
+      <div class="row">
+        <div class="col-md-6" ng-if="getHobbySections()[$index+0]">
+          <h3>{{ getHobbySections()[$index+0].name }}</h3>
+          <ul>
+            <li ng-repeat="hobby in getHobbySections()[$index+0].hobbies">{{ hobby }}</li>
+          </ul>
+        </div>
+        <div class="col-md-6" ng-if="getHobbySections()[$index+1]">
+          <h3>{{ getHobbySections()[$index+1].name }}</h3>
+          <ul>
+            <li ng-repeat="hobby in getHobbySections()[$index+1].hobbies">{{ hobby }}</li>
+          </ul>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
 <div id="sitefooter"></div>
 
 </body>
