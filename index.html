@@ -32,7 +32,7 @@
       <div class="ttitle">
         {{ job.title }} at <span class="comp-{{ job.company.color }}">{{ job.company.name }}</span>
       </div>
-      <div class="tdesc" ng-hide="true">{{ job.description }}</div>
+      <div class="tdesc" ng-show="{{ job.description }}">{{ job.description }}</div>
       <div class="tbullets" ng-show="{{ job.bullets }}">
         <ul>
           <li ng-repeat="bullet in job.bullets">{{ bullet }}</li>
