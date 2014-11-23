@@ -67,19 +67,19 @@ resumeApp.controller('JobController', function ($scope) {
 		{
 			company: { name: "BlitzLocal", color: "blue" },
 			dates: { start: "July 2012", end: "October 2012" },
-			description: "Optimization of social media analytics metric generation.",
+			description: "Optimized social media analytics metric generation.",
 			title: "Software Engineer"
 		},
 		{
 			company: { name: "Kyle Stevenson LLC", color: "none" },
 			dates: { start: "June 2011", end: "February 2014" },
-			description: "Custom software solutions for a myriad of clients across many domains of problems.",
+			description: "Created custom software solutions for a myriad of clients across many domains of problems.",
 			title: "Software Engineer"
 		},
 		{
 			company: { name: "Department of Veterans Affairs", color: "none" },
 			dates: { start: "July 2010", end: "September 2012" },
-			description: "Created inventory management API and UI in C#.",
+			description: "Implemented inventory management API and UI.",
 			title: "STEP Student (Intern)"
 		}
 	];
