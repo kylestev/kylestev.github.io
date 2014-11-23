@@ -17,7 +17,7 @@
       <div id="htdesc">{{ me.major }} {{ me.year }} at {{ me.school }}</div>
       <div id="htem">{{ me.email.username }} [at] {{ me.email.domain }}</div>
       <div id="icons">
-        <div class="svgico" ng-repeat="icon in socialIcons">
+        <div class="svgico" ng-repeat="icon in getSocialIcons()">
           <a href="{{ icon.href }}"><img ng-src="{{ icon.src }}" /></a>
         </div>
       </div>
@@ -27,7 +27,7 @@
 
 <div class="container">
   <div id="timeline" ng-controller="JobController">
-    <div class="timelineitem" ng-repeat="job in jobs">
+    <div class="timelineitem" ng-repeat="job in getJobs()">
       <div class="tdate">{{ printDates(job) }}</div>
       <div class="ttitle">
         {{ job.title }} at <span class="comp-{{ job.company.color }}">{{ job.company.name }}</span>
@@ -53,7 +53,7 @@
 <div class="container" ng-controller="ProjectController">
   <h2>Projects</h2>
   <div class="row">
-    <div class="col-md-4" ng-repeat="project in projects">
+    <div class="col-md-4" ng-repeat="project in getProjects()">
       <div class="pp">
         <a href="{{ project.image.href }}">
           <img ng-src="{{ project.image.src }}" class="img-circle imgb" height="200px">
