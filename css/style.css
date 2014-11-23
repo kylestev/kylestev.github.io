@@ -93,6 +93,9 @@ span.comp-orange { color: #c34500; }
 .svgico {
   display: inline-block;
 }
+.svgico a img {
+  max-width: 56px;
+}
 #timeline {
   font-size: 20px;
   font-weight: 300;
@@ -245,7 +248,4 @@ hr.soft {
   font-size: 20px;
   margin-bottom: 20px;
   font-weight: 300;
-}
-.svgico a img {
-  max-width: 56px;
 }
