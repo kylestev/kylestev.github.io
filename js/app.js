@@ -103,7 +103,8 @@ resumeApp.controller('ProjectController', function ($scope) {
 			image: {
 				src: "https://i.imgur.com/9xQKzC6.png",
 				href: "https://github.com/kylestev/jbcm"
-			}
+			},
+			repo: "https://github.com/kylestev/jbcm"
 		}
 	];
 });
