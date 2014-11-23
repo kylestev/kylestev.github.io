@@ -126,7 +126,7 @@ resumeApp.controller('ProjectController', function ($scope) {
 resumeApp.controller('HobbyController', function ($scope) {
 	var hobbySections = [
 		{
-			name: "Books",
+			name: "Favorite Books",
 			hobbies: [
 				"Ender's Game Series",
 				"Foundation Series",
@@ -142,11 +142,11 @@ resumeApp.controller('HobbyController', function ($scope) {
 			]
 		},
 		{
-			name: "Puzzles",
+			name: "Fun Puzzles",
 			hobbies: [
-				"Rubik's Cube",
-				"Pyraminx",
-				"2x2 Cube",
+				"Rubik's Cube (< 60s solves)",
+				"Pyraminx (< 20s solves)",
+				"2x2 Cube (< 30s solves)",
 			]
 		},
 		{
@@ -161,6 +161,7 @@ resumeApp.controller('HobbyController', function ($scope) {
 		{
 			name: "Selected Topics in Computing",
 			hobbies: [
+				"Large System Design",
 				"Application Security",
 				"Penetration Testing",
 				"Reverse Engineering",
@@ -172,6 +173,7 @@ resumeApp.controller('HobbyController', function ($scope) {
 		{
 			name: "Software Engineering Practices",
 			hobbies: [
+				"Behavior-Driven Development",
 				"Dependency Injection",
 				"Inversion of Control",
 			]
