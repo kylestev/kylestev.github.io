@@ -108,6 +108,14 @@ resumeApp.controller('ProjectController', function ($scope) {
 			}
 		},
 		{
+			title: "Map the Yak!",
+			description: "Map the Yak maps Yik Yak posts in near real time, showing use of the app via heatmap timelapses across variouses universities in the USA.",
+			image: {
+				src: "https://i.imgur.com/akBj3FV.png",
+				href: "https://github.com/kylestev"
+			}
+		},
+		{
 			title: "Java Bytecode Manipulator (jbcm)",
 			description: "jbcm is a Python module that allows programatic access to the internals of Java Virtual Machine Classfiles.",
 			image: {
