@@ -115,15 +115,15 @@ resumeApp.controller('ProjectController', function ($scope) {
 				href: "https://github.com/kylestev"
 			}
 		},
-		{
-			title: "Java Bytecode Manipulator (jbcm)",
-			description: "jbcm is a Python module that allows programatic access to the internals of Java Virtual Machine Classfiles.",
-			image: {
-				src: "https://i.imgur.com/9xQKzC6.png",
-				href: "https://github.com/kylestev/jbcm"
-			},
-			repo: "https://github.com/kylestev/jbcm"
-		}
+		// {
+		// 	title: "Java Bytecode Manipulator (jbcm)",
+		// 	description: "jbcm is a Python module that allows programatic access to the internals of Java Virtual Machine Classfiles.",
+		// 	image: {
+		// 		src: "https://i.imgur.com/9xQKzC6.png",
+		// 		href: "https://github.com/kylestev/jbcm"
+		// 	},
+		// 	repo: "https://github.com/kylestev/jbcm"
+		// }
 	];
 
 	$scope.getProjects = function () {
