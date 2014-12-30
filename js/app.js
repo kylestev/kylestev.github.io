@@ -123,6 +123,14 @@ resumeApp.controller('ProjectController', function ($scope) {
 				href: "https://medium.com/@kylestev/open-season-on-vnc-servers-around-the-world-4b89a0f8d992"
 			}
 		},
+		{
+			title: "Prison Architect Editor",
+			description: "Simple Python module for accessing Prison Architect save files.",
+			image: {
+				src: "https://i.imgur.com/l12tJGN.png",
+				href: "https://github.com/kylestev/prisonarchitect"
+			}
+		},
 		// {
 		// 	title: "Java Bytecode Manipulator (jbcm)",
 		// 	description: "jbcm is a Python module that allows programatic access to the internals of Java Virtual Machine Classfiles.",
