@@ -3,7 +3,7 @@ var resumeApp = angular.module('resumeApp', []);
 resumeApp.controller('PersonController', function ($scope) {
 	var self = {
 		name: "Kyle Stevenson",
-		major: "Mathematics",
+		major: "Computer Science",
 		year: "Sophomore",
 		school: "Oregon State University",
 		image: {
