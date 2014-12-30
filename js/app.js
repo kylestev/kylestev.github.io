@@ -112,7 +112,7 @@ resumeApp.controller('ProjectController', function ($scope) {
 			description: "Map the Yak maps Yik Yak posts in near real time, showing use of the app via heatmap timelapses across variouses universities in the USA.",
 			image: {
 				src: "https://i.imgur.com/akBj3FV.png",
-				href: "https://github.com/kylestev"
+				href: "https://medium.com/@kylestev/the-yak-is-a-hack-bcf1616f1195"
 			}
 		},
 		// {
