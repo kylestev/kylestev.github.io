@@ -115,6 +115,14 @@ resumeApp.controller('ProjectController', function ($scope) {
 				href: "https://medium.com/@kylestev/the-yak-is-a-hack-bcf1616f1195"
 			}
 		},
+		{
+			title: "VNC Open Season",
+			description: "What happens when you leave VNC open to the public? Which countries have the highest density of vulnerable servers? Read to find out!",
+			image: {
+				src: "https://i.imgur.com/pgpG6TH.png",
+				href: "https://medium.com/@kylestev/open-season-on-vnc-servers-around-the-world-4b89a0f8d992"
+			}
+		},
 		// {
 		// 	title: "Java Bytecode Manipulator (jbcm)",
 		// 	description: "jbcm is a Python module that allows programatic access to the internals of Java Virtual Machine Classfiles.",
