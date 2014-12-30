@@ -103,7 +103,7 @@ resumeApp.controller('ProjectController', function ($scope) {
 			title: "Which Course For Me",
 			description: "Which Course for Me is a web application providing current, consumable information about courses offered at Oregon State University. Conveniently, there are interfaces for both humans (Bootstrap + AngularJS), and for machines (JSON API)!",
 			image: {
-				src: "https://i.imgur.com/SU6wXSd.png",
+				src: "https://i.imgur.com/CSZw6m7.png",
 				href: "https://which-course-for.me"
 			}
 		},
