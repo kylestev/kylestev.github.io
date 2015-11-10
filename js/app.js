@@ -3,9 +3,6 @@ var resumeApp = angular.module('resumeApp', []);
 resumeApp.controller('PersonController', function ($scope) {
 	var self = {
 		name: "Kyle Stevenson",
-		major: "Computer Science",
-		year: "Sophomore",
-		school: "Oregon State University",
 		image: {
 			src: "img/me.jpg"
 		},
@@ -33,7 +30,7 @@ resumeApp.controller('JobController', function ($scope) {
 	var jobs = [
 		{
 			company: { name: "Rackspace", color: "red" },
-			dates: { start: "June 2014" },
+			dates: { start: "June 2014", end: "March 2015" },
 			// "description": "Contributed to <a href=\"https://github.com/openstack/ironic\">Open Source software</a> that quickly provisions physical hardware for customers.",
 			description: "Contributed to Open Source software that quickly provisions physical hardware for customers.",
 			title: "Software Engineer Intern",
